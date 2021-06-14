@@ -1,0 +1,92 @@
+.command
+  .container
+    text-align: center
+  margin-bottom: 60px
+  .title
+    text-align: center
+    margin-bottom: 90px
+    //+phone-down
+      &:before, &:after
+        width: 35%
+      &:before
+        left: -75px
+      &:after
+        right: -75px
+    +phonemin-down
+      &:before, &:after
+        width: 15%
+      &:before
+        left: -35px
+      &:after
+        right: -35px
+
+    &.title-box
+      padding: 16px 27px 13px 19px
+
+  .carousel
+    .carousel-item
+      .row
+        justify-content: center
+
+  .slider-item
+    text-align: center
+    font-size: 18px
+    line-height: 1.1
+    height: 425px
+    .image-block
+      position: relative
+      margin-bottom: 22px
+      img
+        width: 100%
+        height: auto
+
+      .hover-block
+        display: none
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        background: $green
+        .social-list
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 14px 0
+
+          .social-item
+            list-style: none
+            margin-right: 18px
+            width: 22px
+            height: 22px
+            &:last-child
+              margin-right: 0
+
+            & a
+              display: inline-block
+              width: 22px
+              height: 22px
+              background:
+                repeat: no-repeat
+                size: contain
+                position: center
+            &.fb a
+              background-image: url("../images/icons/fb.png")
+            &.vk a
+              background-image: url("../images/icons/vk.png")
+            &.insta a
+              background-image: url("../images/icons/insta.png")
+    +tablet-down
+      margin: 0 auto
+      width: 300px
+
+    &:hover
+      .hover-block
+        display: block
+
+    .info-block
+      .name
+        font-family: $font-Raleway-Semibold
+        margin-bottom: 2px
+      .spec
+        font-family: $font-Raleway-Regular
+        color: $grey

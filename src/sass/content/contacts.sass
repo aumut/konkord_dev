@@ -1,0 +1,121 @@
+.contacts
+  //padding-bottom: 0px!important
+  color: $grey-blue
+  font-size: 20px
+  font-family: $font-Raleway-Light
+  .container-map
+    +tablet-down
+      padding-left: 0
+      padding-right: 0
+  &-map
+    padding-bottom: 0px!important
+    .contacts-wrap
+      margin-bottom: 60px
+
+  .map-wrapper
+    width: 100%
+    height: 100%
+    .map
+      width: 100%
+      min-height: 450px
+
+  .appl-form
+    display: flex
+    justify-content: space-between
+    +tablet-down
+      flex-direction: column
+  .form-control
+    width: 300px
+    +ipad-down
+      margin-right: 10px
+    +tablet-down
+      width: 100%
+      margin-bottom: 35px
+      margin-right: 0px
+    //&:last-child
+      +tablet-down
+        margin-bottom: 0px
+  .btn-send
+    width: 250px
+    +tablet-down
+      width: 100%
+
+  h2.title
+    font-family: $font-HelveticaNeueCyr-Light
+    text-transform: uppercase
+    color: $grey-blue
+    margin-bottom: 40px
+    +tablet-down
+      margin-bottom: 43px
+
+  &-wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 55px
+    +tablet-down
+      flex-direction: column
+
+  &-addr
+    font-family: $font-HelveticaNeueCyr-Light
+    font-size: 24px
+    +ipad-down
+      width: 51%
+    +tablet-down
+      width: auto
+      margin-bottom: 48px
+  .phone
+    display: block
+    font-size: 20px
+    line-height: 1
+    margin-bottom: 24px
+  .phone-icon
+    width: 26px
+    height: 26px
+    margin-right: 27px
+    +phonemin-down
+      margin-right: 5px
+  .clock-icon
+    margin-right: 27px
+    +phonemin-down
+      margin-right: 5px
+  .btn-yandex
+    display: inline-block
+    font-size: 20px
+    width: auto
+    padding: 8px 33px 8px 25px
+    margin-top: -64px
+    +tablet-down
+      margin-top: 47px
+      padding-top: 18px
+      padding-bottom: 18px
+    &>strong
+      display: inline-flex
+      align-items: center
+      height: 100%
+
+  &-time
+    display: flex
+    line-height: 1.3
+    +ipad-down
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+    &-right
+      min-width: 135px
+      margin-left: 50px
+      font-family: $font-HelveticaNeueCyr-Medium
+      +ipad-down
+        margin-left: 0px
+      // +tablet-down
+      //   margin-left: 50px
+      // +phonemin-down
+      //   margin-left: 0px
+
+
+.myPlacemark
+  background: #ffffff
+  padding: 5px
+  width: 170px
+  font-weight: bold
+  //margin-left: 20px

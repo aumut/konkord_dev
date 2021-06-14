@@ -1,0 +1,47 @@
+.feedback
+  font-size: 24px
+  line-height: 1.4
+  color: $fontColorMain
+  +tablet-down
+    font-size: 20px
+    line-height: 1.5
+  .title-box
+    margin-bottom: 30px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    +tablet-down
+      flex-direction: column
+  &-item
+    +tablet-down
+      width: 100%
+      margin-bottom: 25px
+    &:last-child
+      +tablet-down
+        margin-bottom: 0px
+  &-right
+    width: 36.2%
+    +tablet-down
+      width: 100%
+
+  .phone, .mail
+    font-size: 20px
+    line-height: 1
+    display: flex
+    align-items: center
+    color: $fontColorMain
+
+    &-icon
+      fill: #FFFFFF
+      margin-right: 0px
+
+  .phone
+    margin-top: 40px
+    margin-bottom: 25px
+    font-family: $font-HelveticaNeueCyr-Light
+
+  .form-control
+    margin: 20px 0 25px
+  .btn
+    margin-top: 12px
+

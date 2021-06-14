@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Конкорд</title>
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48" href="public/favicon.ico">
+
+    <link media="none" onload="if(media!='all') media='all'" rel="stylesheet" type="text/css" href="public/css/normalize.css">
+    <link media="none" onload="if(media!='all') media='all'" rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <link media="none" onload="if(media!='all') media='all'" rel="stylesheet" type="text/css" href="public/css/bootstrap-grid.min.css">
+    <link media="none" onload="if(media!='all') media='all'" rel="stylesheet" type="text/css" href="public/css/header.min.css">
+    <link media="none" onload="if(media!='all') media='all'" rel="stylesheet" type="text/css" href="public/css/styles.min.css">
+
+
+</head>
+<body>
+<div class="content-wrapper">
+  <div class="header" id="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="contacts-info">
+          <a href="tel:8 (495) 664-69-25" class="phone contacts-info-item">
+            <svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg><span>8 (495) 664-69-25</span>
+          </a>
+          <a href="mailto:info-concord@mail.ru" class="mail contacts-info-item">
+            <svg class="mail-icon"><use xlink:href="public/images/icons/sprite.svg#ic-mail"/></svg><span>info-concord@mail.ru</span>
+          </a>
+          <div class="select-wrap location-icon">
+            <select class="contacts-info-item">
+              <option selected>Москва</option>
+              <option>Владимир</option>
+            </select>
+          </div>
+        </div>
+        <ul class="social">
+          <li><a href="tg://resolve?domain=@NAME" title="Telegram" class="social-item tg"></a></li>
+          <li><a href="#" class="social-item vb" title="Viber"></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=84956646925" title="WhatsApp" class="social-item wa"></a></li>
+        </ul>
+        <button type="button" id="show-menu" class="btn show-menu"></button>
+      </div>
+      <div class="header-bottom">
+        <a href="#" id="logo" class="logo">
+          <img src="public/images/icons/logo-img.svg" alt="logo" title="Конкорд - юридическая компания">
+          <div class="logo-text">
+            <span class="logo-name">Конкорд</span>
+            <span class="logo-subname">юридическая компания</span>
+          </div>
+        </a>
+        <ul class="navigation">
+          <li class="active">
+            <a href="#header" page-id="1" class="navigation-item">главная</a>
+          </li>
+          <li class="">
+            <a href="#services" page-id="4" class="navigation-item">услуги</a>
+          </li>
+          <li class="">
+            <a href="/" page-id="3" class="navigation-item">цены</a>
+          </li>
+          <li class="">
+            <a href="#contacts" page-id="2" class="navigation-item">контакты</a>
+          </li>
+          <li class="">
+            <a href="#about-us" page-id="" class="navigation-item">о нас</a>
+          </li>
+        </ul>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper head-banner img-s visible">
+  <div class="head-banner-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 col-sm-7">
+          <h1 class="title">Мы защитим вас от проблем</h1>
+          <p class="subtitle">Наша миссия - cделать все и немного больше…</p>
+          <a href="/about.html" class="btn btn-rad">О нас</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper">
+  <div class="services" id="services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="title title-box">Наши услуги</h2>
+      </div>
+      <div class="services-wrap">
+        <div class="services-item">
+          <h1 class="title">физические лица</h1>
+          <div class="collapse-wrap">
+            <div class="collapse-btn-wrap">
+              <button class="collapse-btn" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                <svg class="plus-icon"><use xlink:href="public/images/icons/sprite.svg#ic-plus"/></svg>
+                <span>Защита прав заемщиков</span>
+              </button>
+            </div>
+            <div class="collapse show" id="collapse1">
+              <div class="card card-body">
+                <ul class="services-list">
+                  <li>Семейные споры</li>
+                  <li>Жилищные споры</li>
+                  <li>Трудовые споры</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse-wrap">
+            <div class="collapse-btn-wrap">
+              <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                <svg class="plus-icon"><use xlink:href="public/images/icons/sprite.svg#ic-plus"/></svg>
+                <span>Земельные споры</span>
+              </button>
+            </div>
+            <div class="collapse" id="collapse2">
+              <div class="card card-body">
+                <ul class="services-list"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse-wrap">
+            <div class="collapse-btn-wrap">
+              <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                <svg class="plus-icon"><use xlink:href="public/images/icons/sprite.svg#ic-plus"/></svg>
+                <span>Защита прав потребителей</span>
+              </button>
+            </div>
+            <div class="collapse" id="collapse3">
+              <div class="card card-body">
+                <ul class="services-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-item">
+          <h1 class="title">юридические лица</h1>
+          <div class="collapse-wrap">
+            <div class="collapse-btn-wrap">
+              <button class="collapse-btn" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                <svg class="plus-icon"><use xlink:href="public/images/icons/sprite.svg#ic-plus"/></svg>
+                <span>Абонентское обслуживание</span>
+              </button>
+            </div>
+            <div class="collapse show" id="collapse4">
+              <div class="card card-body">
+                <ul class="services-list">
+                  <li>Налоговая оптимизация</li>
+                  <li>Арбитражные споры</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse-wrap">
+            <div class="collapse-btn-wrap">
+              <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                <svg class="plus-icon"><use xlink:href="public/images/icons/sprite.svg#ic-plus"/></svg>
+                <span>Бухгалтерские услуги</span>
+              </button>
+            </div>
+            <div class="collapse" id="collapse5">
+              <div class="card card-body">
+                <ul class="services-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper">
+  <div class="feedback bg-purple" id="feedback">
+    <div class="container">
+      <h2 class="title title-box title-box--right">Форма обратной связи</h2>
+      <div class="feedback-wrap">
+        <div class="feedback-item">
+          <p>Не нашли подходящую услугу?</p>
+          <p>Наш юрист проконсультирует вас бесплатно!</p>
+          <a href="tel:8 (495) 664-69-25" class="phone">
+            <span class="ic-rad"><svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg></span><span>8 (495) 664-69-25</span>
+          </a>
+          <a href="mailto:info-concord@mail.ru" class="mail">
+            <span class="ic-rad"><svg class="mail-icon"><use xlink:href="public/images/icons/sprite.svg#ic-mail"/></svg></span><span>info-concord@mail.ru</span>
+          </a>
+        </div>
+        <div class="feedback-item feedback-right">
+          <form action="" method="POST" id="appl_form1" name="appl_form1" class="needs-validation" novalidate>
+            <div class="appl-form">
+              <input type="text" class="form-control form-control--green" placeholder="Имя" required>
+              <input type="text" class="form-control form-control--green phone-num" placeholder="Телефон" required>
+              <button type="submit" name="submit" class="btn btn-send">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper about-us-bgimg">
+  <div class="about-us-wrap" id="about-us">
+    <div class="container">
+      <div class="about-us">
+        <div class="about-us__text">
+          <h2 class="title title-box title-box--right">Ещё немного о нашей компании!</h2>
+          <ul class="list">
+            <li class="list-item list-item__econom">
+              <p class="bold">Экономия Ваших средств</p>
+              <p>Отсутствие дополнительных платежей за наши услуги, Вы платите ровно столько – сколько указано в Вашем договоре с нашей компанией</p>
+            </li>
+            <li class="list-item list-item__speed">
+              <p class="bold">Скорость работы</p>
+              <p>Мы подаем необходимые процессуальные документы (претензия, исковое заявление) в течение 1 дня, с момента заключения с Вами договора</p>
+            </li>
+            <li class="list-item list-item__honest">
+              <p class="bold">Честность</p>
+              <p>В любое удобное для Вас время мы предоставляем Вам отчет о проделанной работе по Вашему вопросу</p>
+            </li>
+            <li class="list-item list-item__profi">
+              <p class="bold">Профессионализм</p>
+              <p>Команда профессиональных юристов с обширным практическим опытом  в отраслях права различной степени сложности</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper why-info-bg-green">
+  <div class="why-info-wrap">
+    <div class="container">
+      <div class="why-info">
+        <div class="item">
+          <p class="number">126</p>
+          <p class="description">обращений за год</p>
+        </div>
+        <div class="item">
+          <p class="number">92</p>
+          <p class="description">% выйгранных дел</p>
+        </div>
+        <div class="item">
+          <p class="number">7</p>
+          <p class="description">лет успешной работы</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="contacts bg-purple">
+    <div class="container">
+      <div class="contacts-wrap">
+        <p class="contacts-addr">г. Москва, ул. Доброслободская д.6 стр.1, 5 этаж</p>
+        <div class="">
+          <a href="tel:8 (495) 664-69-25" class="phone">
+            <svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg><span>8 (495) 664-69-25</span>
+          </a>
+          <span class="time d-flex">
+            <svg class="clock-icon"><use xlink:href="public/images/icons/sprite.svg#ic-clock"/></svg>
+            <div class="contacts-time">
+              <div class="contacts-time-left">
+                <div>Будни</div>
+                <div>Суббота</div>
+                <div>Воскресенье</div>
+              </div>
+              <div class="contacts-time-right">
+                <div>10:00 — 19:00</div>
+                <div>10:00 — 17:00</div>
+                <div>10:00 — 15:00</div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <!--<button class="btn btn-yandex">Маршрут в Яндекс Навигаторе</button>-->
+        <a class="btn btn-yandex" href="yandexnavi://build_route_on_map?lat_to=56.268156&lon_to=37.985458"><strong>Yandex навигатор</strong></a>
+      </div>
+      <form action="" method="POST" id="appl_form2" name="appl_form2" class="needs-validation" novalidate>
+        <h2 class="title">ЗАКАЗАТЬ ОБРТАНЫЙ ЗВОНОК</h2>
+        <div class="appl-form">
+          <input type="text" class="form-control form-control--green" placeholder="Имя" required>
+          <input type="text" class="form-control form-control--green phone-num" placeholder="Телефон" required>
+          <button type="submit" name="submit" class="btn btn-send">Заказать</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="command">
+    <div class="container">
+      <h2 class="title title-box"><span>Наша команда</span></h2>
+
+      <!--Carousel Wrapper-->
+      <div id="commandCarousel" class="command-carousel carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
+
+        <!--Controls-->
+        <div class="controls controls-bottom">
+          <a class="btn-floating prev" href="#commandCarousel" data-slide="prev">
+            <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+          </a>
+          <a class="btn-floating" href="#commandCarousel" data-slide="next">
+            <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+          </a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+          <!--First slide-->
+          <div class="carousel-item active">
+
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <div class="img-wrapper">
+                      <img class="lazy" src="data:image/gif;base64,R0lGODlhMgA5AIAAAP///wAAACH5BAEAAAEALAAAAAAyADkAAAI3jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvNZAAA7" data-src="public/images/content/command/1.jpg" alt="Наша команда">
+                    </div>
+                    <div class="hover-block">
+                      <ul class="social-list">
+                        <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                        <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                        <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="name">Lorem ipsum 111</div>
+                    <div class="spec">директор</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <div class="img-wrapper">
+                      <img class="lazy" src="data:image/gif;base64,R0lGODlhMgA5AIAAAP///wAAACH5BAEAAAEALAAAAAAyADkAAAI3jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvNZAAA7" data-src="public/images/content/command/2.jpg" alt="Наша команда">
+                    </div>
+                    <div class="hover-block">
+                      <ul class="social-list">
+                        <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                        <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                        <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="name">Lorem ipsum 222</div>
+                    <div class="spec">директор</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <div class="img-wrapper">
+                      <img class="lazy" src="data:image/gif;base64,R0lGODlhMgA5AIAAAP///wAAACH5BAEAAAEALAAAAAAyADkAAAI3jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvNZAAA7" data-src="public/images/content/command/3.jpg" alt="Наша команда">
+                    </div>
+                    <div class="hover-block">
+                      <ul class="social-list">
+                        <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                        <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                        <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="name">Lorem ipsum 333</div>
+                    <div class="spec">директор</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/.First slide-->
+
+          <!--Second slide-->
+          <div class="carousel-item">
+
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <div class="img-wrapper">
+                      <img class="lazy" src="data:image/gif;base64,R0lGODlhMgA5AIAAAP///wAAACH5BAEAAAEALAAAAAAyADkAAAI3jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvNZAAA7" data-src="public/images/content/command/1.jpg" alt="Наша команда">
+                    </div>
+                    <div class="hover-block">
+                      <ul class="social-list">
+                        <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                        <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                        <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="name">Lorem ipsum 444</div>
+                    <div class="spec">директор</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <div class="img-wrapper">
+                      <img class="lazy" src="data:image/gif;base64,R0lGODlhMgA5AIAAAP///wAAACH5BAEAAAEALAAAAAAyADkAAAI3jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvNZAAA7" data-src="public/images/content/command/1.jpg" alt="Наша команда">
+                    </div>
+                    <div class="hover-block">
+                      <ul class="social-list">
+                        <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                        <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                        <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="name">Lorem ipsum 555</div>
+                    <div class="spec">директор</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!--/.Second slide-->
+
+        </div>
+        <!--/.Slides-->
+
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="reviews">
+    <div class="container">
+      <h2 class="title"><span>Отзывы и благодарности</span></h2>
+      <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="review-text">
+              <div class="text scrolled">
+                Выражаю благодарность юристам компании Конкорд за успешное решение моего спора с застройщиком. Застройщик просрочил передачу мне квартиры, и юристы смогли взыскать для меня с застройщика более 300 тысяч рублей неустойки,
+                чем я очень доволен. Рекомендую компанию Конкорд. Здесь работают поистине профессионалы своего дела!
+              </div>
+            </div>
+            <span class="delimiter"></span>
+            <p class="review-name">Тимофеев Дмитрий Геннадьевич</p>
+            <p class="review-spec">директор производственной компании</p>
+          </div>
+          <div class="carousel-item">
+            <div class="review-text">
+              <div class="text scrolled">
+                2222 Выражаю благодарность юристам компании Конкорд за успешное решение моего спора с застройщиком. Застройщик просрочил передачу мне квартиры, и юристы смогли взыскать для меня с застройщика более 300 тысяч рублей неустойки,
+                чем я очень доволен. Рекомендую компанию Конкорд. Здесь работают поистине профессионалы своего дела!
+              </div>
+            </div>
+            <span class="delimiter"></span>
+            <p class="review-name">Тимофеев Дмитрий Геннадьевич</p>
+            <p class="review-spec">директор производственной компании</p>
+          </div>
+          <div class="carousel-item">
+            <div class="review-text">
+              <div class="text scrolled">
+                3333 Выражаю благодарность юристам компании Конкорд за успешное решение моего спора с застройщиком. Застройщик просрочил передачу мне квартиры, и юристы смогли взыскать для меня с застройщика более 300 тысяч рублей неустойки,
+                чем я очень доволен. Рекомендую компанию Конкорд. Здесь работают поистине профессионалы своего дела!
+              </div>
+            </div>
+            <span class="delimiter"></span>
+            <p class="review-name">Тимофеев Дмитрий Геннадьевич</p>
+            <p class="review-spec">директор производственной компании</p>
+          </div>
+          <div class="carousel-item">
+            <div class="review-text">
+              <div class="text scrolled">
+                4444 Выражаю благодарность юристам компании Конкорд за успешное решение моего спора с застройщиком. Застройщик просрочил передачу мне квартиры, и юристы смогли взыскать для меня с застройщика более 300 тысяч рублей неустойки,
+                чем я очень доволен. Рекомендую компанию Конкорд. Здесь работают поистине профессионалы своего дела!
+              </div>
+            </div>
+            <span class="delimiter"></span>
+            <p class="review-name">Тимофеев Дмитрий Геннадьевич</p>
+            <p class="review-spec">директор производственной компании</p>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#reviewsCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#reviewsCarousel" data-slide-to="1"></li>
+          <li data-target="#reviewsCarousel" data-slide-to="2"></li>
+          <li data-target="#reviewsCarousel" data-slide-to="3"></li>
+        </ol>
+        <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+          <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+        </a>
+        <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+          <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="video">
+    <div class="container">
+      <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%"  poster="public/video/screenshot1.jpg" preload="none" >
+                <source src="public/video/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%" poster="public/video/screenshot2.jpg" preload="none">
+                <source src="public/video/2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%" poster="public/video/screenshot1.jpg" preload="none">
+                <source src="public/video/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%" poster="public/video/screenshot2.jpg" preload="none">
+                <source src="public/video/2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#videoCarousel" data-slide-to="1"></li>
+          <li data-target="#videoCarousel" data-slide-to="2"></li>
+          <li data-target="#videoCarousel" data-slide-to="3"></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="letters">
+    <div class="container">
+      <!--Carousel Wrapper-->
+      <div id="lettersCarousel" class="command-carousel carousel slide carousel-multi-item" data-ride="gallery">
+
+        <!--Controls-->
+        <div class="controls controls-bottom">
+          <a class="btn-floating prev" href="#lettersCarousel" data-slide="prev">
+            <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+          </a>
+          <a class="btn-floating" href="#lettersCarousel" data-slide="next">
+            <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+          </a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+          <!--First slide-->
+          <div class="carousel-item active">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img class="lazy slide" src="data:image/gif;base64,R0lGODlhHwHHAIAAAP///wAAACH5BAEAAAEALAAAAAAfAccAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZFjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrkioAADs="
+                         data-src="public/images/content/letter1.jpg" alt="Благодарственное письмо 1">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img class="lazy slide" src="data:image/gif;base64,R0lGODlhHwHHAIAAAP///wAAACH5BAEAAAEALAAAAAAfAccAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZFjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrkioAADs="
+                         data-src="public/images/content/letter2.jpg" alt="Благодарственное письмо 2">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img class="lazy slide" src="data:image/gif;base64,R0lGODlhHwHHAIAAAP///wAAACH5BAEAAAEALAAAAAAfAccAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZFjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrkioAADs="
+                         data-src="public/images/content/letter3.jpg" alt="Благодарственное письмо 3">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/.First slide-->
+
+          <!--Second slide-->
+          <div class="carousel-item">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img class="lazy slide" src="data:image/gif;base64,R0lGODlhHwHHAIAAAP///wAAACH5BAEAAAEALAAAAAAfAccAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZFjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrkioAADs="
+                         data-src="public/images/content/letter1.jpg" alt="Благодарственное письмо 4">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img class="lazy slide" src="data:image/gif;base64,R0lGODlhHwHHAIAAAP///wAAACH5BAEAAAEALAAAAAAfAccAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZFjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrkioAADs="
+                         data-src="public/images/content/letter2.jpg" alt="Благодарственное письмо 5">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img class="lazy slide" src="data:image/gif;base64,R0lGODlhHwHHAIAAAP///wAAACH5BAEAAAEALAAAAAAfAccAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZFjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrkioAADs="
+                         data-src="public/images/content/letter3.jpg" alt="Благодарственное письмо 6">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/.Second slide-->
+
+        </div>
+        <!--/.Slides-->
+
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="contacts contacts-map" id="contacts">
+    <div class="container">
+      <div class="contacts-wrap">
+        <p class="contacts-addr">г. Москва, ул. Доброслободская д.6 стр.1, 5 этаж</p>
+        <div class="">
+          <a href="tel:8 (495) 664-69-25" class="phone">
+            <svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg><span>8 (495) 664-69-25</span>
+          </a>
+          <span class="time d-flex">
+            <svg class="clock-icon"><use xlink:href="public/images/icons/sprite.svg#ic-clock"/></svg>
+            <div class="contacts-time">
+              <div class="contacts-time-left">
+                <div>Будни</div>
+                <div>Суббота</div>
+                <div>Воскресенье</div>
+              </div>
+              <div class="contacts-time-right">
+                <div>10:00 — 19:00</div>
+                <div>10:00 — 17:00</div>
+                <div>10:00 — 15:00</div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <!--<button class="btn btn-yandex">Маршрут в Яндекс Навигаторе</button>-->
+        <a class="btn btn-yandex" href="yandexnavi://build_route_on_map?lat_to=56.268156&lon_to=37.985458"><strong>Yandex навигатор</strong></a>
+      </div>
+    </div>
+    <div class="container container-map">
+      <div class="map-wrapper">
+          <div id="map" class="map"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="blog-wrap" id="blog">
+    <div class="container">
+      <div class="blog">
+        <h2 class="title title-box title-box--right">Блог полезной информации</h2>
+        <div class="blog-content">
+          <!-- подблок блога-->
+          <div class="blog-item">
+            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../public/images/content/blog_img.jpg" alt="">
+            <h3 class="title">Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#">
+              <svg class="ic-arrow-right">
+                <use xlink:href="../public/images/icons/sprite.svg#ic-arrow-right" href="../public/images/icons/sprite.svg#ic-arrow-right"></use>
+              </svg>
+            </a>
+          </div><!-- конец подблок блога-->
+
+          <!-- подблок блога-->
+          <div class="blog-item">
+            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../public/images/content/blog_img.jpg" alt="">
+            <h3 class="title">Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.  </p>
+            <a href="#">
+              <svg class="ic-arrow-right">
+                <use xlink:href="../public/images/icons/sprite.svg#ic-arrow-right" href="../public/images/icons/sprite.svg#ic-arrow-right"></use>
+              </svg>
+            </a>
+          </div><!-- конец подблок блога-->
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="content-info-wrap" id="content-info">
+    <div class="container">
+      <div class="content-info">
+        <p>«Конкорд» - юридическая компания специализирующаяся на предоставлении высококвалифицированных юридических
+          услуг организациям и физическим лицам, а также индивидуальным предпринимателям. Мы оказываем квалифицированную
+          юридическую помощь в г. Москва и Московской области. За время работы Юридическая компания «Конкорд» зарекомендовала
+          себя как надежного партнера в сфере предоставления юридических услуг.</p>
+        <p><strong>
+          Наши преимущества:
+        </strong></p>
+        <ul class="menu">
+          <li class="menu-item">
+            Юристы компании являются выпускниками ведущих юридических вузов страны (МГУ им. М.В. Ломоносова, Московский
+            государственный юридический университет имени О.Е. Кутафина, Российская академия правосудия) и имеют многолетний
+            практический опыт работы в различных отраслях права;
+          </li>
+          <li class="menu-item">
+            За 6 лет работы Юридической компании «Конкорд» юристами выиграно 92,4% дел;
+          </li>
+          <li class="menu-item">
+            Отсутствие дополнительных платежей за наши услуги, Вы платите ровно столько – сколько указано в Вашем договоре
+            с нашей компанией;
+          </li>
+          <li class="menu-item">
+            Мы предоставляем бесплатную правовую оценку перспектив разрешения Вашей ситуации;
+          </li>
+          <li class="menu-item">
+            Мы подаем необходимые процессуальные документы (претензия, исковое заявление) в течение 1 дня, с момента заключения с Вами договора;
+          </li>
+          <li class="menu-item">
+            В любое удобное для Вас время мы предоставляем Вам отчет о проделанной работе по Вашему вопросу.
+          </li>
+        </ul>
+
+        <p>С нами, вы можете не беспокоиться за разрешение Вашего вопроса, мы гарантируем для Вас желаемый результат по делу!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-left">
+          <h3 class="title">«Конкорд»</h3>
+          <div class="position-relative">
+            <p>Юридическая компания специализирующаяся на предоставлении высококвалифицированных юридических услуг организациям и физическим лицам, а также индивидуальным предпринимателям...</p>
+            <a href="#content-info" class="footer-link">подробнее >></a>
+          </div>
+          <div class="copyright">©&nbsp;2020</div>
+        </div>
+        <div class="footer-center">
+          <div class="">
+            <h3 class="title">Меню</h3>
+            <ul class="footer-menu">
+              <li><a href="#header">Главная</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#contacts">Конаткы</a></li>
+              <li><a href="#about-us">О нас</a></li>
+              <li><a href="#blog">Блог</a></li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h2 class="title">Мы в соцсетях</h2>
+            <a href="#">Вконтакте</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h2 class="title">Заказать обратный звонок</h2>
+          <form action="" method="POST" id="appl_form3" name="appl_form3" class="needs-validation" novalidate>
+            <div class="appl-form">
+              <input type="text" class="form-control form-control--grey phone-num" placeholder="Телефон" required>
+              <button type="submit" name="submit" class="btn btn-send">Заказать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a class="to-top btn" id="to-top"><svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg></a>
+
+<script type="template" id="lightboxModal">
+  <span class="close cursor">&times;</span>
+  <div class="modal-content">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</script>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+<script src="public/assets/laziload.min.js"></script>
+<script async src="public/main.min.js"></script>
+</body>
+</html>

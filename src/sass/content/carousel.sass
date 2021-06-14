@@ -1,0 +1,47 @@
+.carousel
+  .carousel-indicators
+    bottom: -66px
+    //+phone-down
+      bottom: -59px
+    li
+      width: 13px
+      height: 13px
+      background: $grey-light
+      border-radius: 50%
+      border-width: 0
+      &.active
+        background: #666f77
+
+.arrow-icon
+  fill: none
+  stroke: $grey-light
+  stroke-width: 10px
+  width: 30px
+  height: 30px
+  &:hover
+    stroke: #51cfd1
+
+.carousel
+  .controls
+    width: 100%
+    position: absolute
+    bottom: -61px
+    left: -4px
+    text-align: center
+  .btn-floating
+    display: inline-block
+    width: 23px
+    height: 38px
+    &.prev .arrow-icon
+      transform: rotate(180deg)
+
+.slider-item
+  max-width: 300px
+  min-width: 300px
+  text-align: center
+  img
+    width: 100%
+    height: auto
+  +ipad-down
+    min-width: 210px
+    width: 210px

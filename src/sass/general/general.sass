@@ -1,0 +1,307 @@
+*
+	&:focus, &:active
+		outline: none !important
+
+html
+	//overflow: hidden
+	font-size: $fontSize_body
+	scroll-behavior: smooth
+
+body
+	font:
+		//family: $font-Roboto-Regular
+		size: 1rem
+		weight: 400
+	color: $fontColorMain
+	line-height: 1
+	min-width: $phone-width-min
+	margin: 0
+	padding: 0
+	height: 100vh
+	background-color: $body_bg
+	+phone-down
+		font-size: 12px
+
+h1, h2, h3, h4, p, ul
+	margin: 0px
+	padding: 0px
+
+h1
+	font-size: $fontSize_h1
+	line-height: $lineHeight_h1
+	font-weight: normal
+
+h2
+	font-size: $fontSize_h2
+	line-height: $lineHeight_h2
+
+h3
+	font-size: $fontSize_h3
+	line-height: $lineHeight_h3
+	+phone-down
+		font-size: 16px
+
+h4
+	font-size: $fontSize_h4
+	line-height: $lineHeight_h4
+	+phone-down
+		font-size: 16px
+
+a
+	&:hover
+		color: inherit
+		text-decoration: none
+
+.container
+	+laptop
+		max-width: 1030px
+
+.title
+	color: $fontColorMain
+	font-family: $font-Raleway-Semibold
+
+//h3.title
+	color: $fontColorMain
+	font-family: $font-Raleway-Semibold
+	font-size: $fontSize_h3
+	line-height: $lineHeight_h3
+
+//h2.title
+	color: $fontColorMain
+	font-family: $font-Raleway-Semibold
+	font-size: $fontSize_h2
+	line-height: $lineHeight_h2
+
+.title-box
+	display: inline-block
+	border: 1px solid $green
+	padding: 13px 33px
+	position: relative
+	+phonemin-down
+		max-width: calc(100vw - 65px)
+	//margin-left: 200px
+	&::before
+		content: ''
+		width: 175px
+		height: 1px
+		position: absolute
+		border-bottom: 1px solid $green
+		top: 50%
+		left: -175px
+		+phone-down
+			width: 114px
+			left: -114px
+		+phonemin-down
+			width: 30px
+			left: -30px
+	&::after
+		content: ''
+		width: 175px
+		height: 1px
+		position: absolute
+		border-bottom: 1px solid $green
+		top: 50%
+		right: -175px
+		+phone-down
+			width: 114px
+			right: -114px
+		+phonemin-down
+			width: 30px
+			right: -30px
+
+.title-box--right
+	padding: 13px 10px
+	&::before
+		content: none
+	&::after
+		width: 225px
+		right: -225px
+		+tablet-down
+			width: 100px
+			right: -100px
+		+phonemin-down
+			width: 30px
+			right: -30px
+.phone-icon
+	display: inline-block
+	width: 20px
+	height: 20px
+	fill: $green
+
+.mail-icon
+	display: inline-block
+	width: 21px
+	height: 15px
+	fill: $green
+
+.clock-icon
+	display: inline-block
+	width: 27px
+	height: 27px
+	fill: $green
+
+.location-icon
+	display: inline-block
+	fill: $green
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: calc(50% - #{$locat_ic_h}/2)
+		left: 0px
+		+bg-image($locat_ic_w, $locat_ic_h, transparent, '../images/icons/ic-location.svg', cover)
+
+.arrow-down
+	display: inline-block
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		top: calc(50% - 8px/2)
+		right: 20px
+		width: 0
+		height: 0
+		border-left: 4.5px solid transparent
+		border-right: 4.5px solid transparent
+		border-top: 8px solid $grey-blue
+
+.btn
+	display: inline-block
+	width: 100%
+	background-color: $green
+	color: #FFFFFF
+	font-size: 22px
+	line-height: 1
+	border-radius: 0px
+	border-width: 0px
+	padding: 10px 18px 13px
+	&:hover
+		color: #FFFFFF
+		background-color: $blue-light
+	&:focus
+		outline: none
+		box-shadow: none
+
+.btn-rad
+	border-radius: 3px
+
+.plus-icon
+	fill: #FFFFFF
+	display: inline-block
+	width: 20px
+	height: 20px
+
+.ic-plus
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 20px
+		height: 20px
+		background:
+			image: url("../images/icons/ic-plus1.svg")
+			color: transparent
+			repeat: no-repeat
+			size: cover
+
+.form-control
+	border-width: 1px
+	border-style: solid
+	border-radius: 0px
+	font-size: 18px
+	line-height: 1
+	height: 46px
+	color: #a7a7a7
+	&--green
+		border-color: $grey-light
+		background-color: #f7f7f7
+		&:focus, &:active
+			//border-width: 2px
+			border-color: $green
+			background-color: #f7f7f7
+	&--grey
+		border-color: $grey2
+		background-color: transparent
+		&:focus, &:active
+			border-color: $grey2
+
+	&:focus, &:active
+		outline: none !important
+		box-shadow: none !important
+		color: #a7a7a7
+	+placeholder
+		color: #a7a7a7
+
+.bg-purple
+	background-color: $purple
+
+
+.ic-rad
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  width: 46px
+  height: 46px
+  border-radius: 50%
+  background-color: $green
+  margin-right: 20px
+  &:hover
+    background-color: $blue-light
+
+.phone-num
+	font-family: $font-HelveticaNeueCyr-Light
+
+.scrolled::-webkit-scrollbar
+	width: 4px
+	height: 4px
+	background-color: $purple
+
+.scrolled::-webkit-scrollbar-thumb
+	background-color: #d1d1d1
+	border-radius: 2px
+	border-radius: 2px
+
+.scrolled
+	scrollbar-color: #d1d1d1 $purple
+	scrollbar-width: thin
+
+.content-wrapper
+	&>div:not(.header):not(.head-banner-content):not(.footer):not(.why-info-wrap)
+		padding: 90px 0px
+		+phonemin-down
+			padding: 60px 0px
+
+//to-top button
+.to-top
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	//background-color: red
+	width: 59px
+	height: 59px
+	padding: 0px
+	text-align: center
+	border-radius: 50%
+	position: fixed
+	bottom: 130px
+	right: 40px
+	transition: background-color .3s, opacity .5s, visibility .5s
+	opacity: 0
+	visibility: hidden
+	z-index: 1000
+	+phone-down
+		right: 20px
+	.arrow-icon
+		stroke: rgba(255, 255, 255, 1)
+		stroke-width: 13px
+		transform: rotate(-90deg)
+		width: 13px
+		height: 23px
+		&:hover
+			stroke: rgba(255, 255, 255, 0.7)
+	&.show
+		opacity: 1
+		visibility: visible
+		line-height: 10px

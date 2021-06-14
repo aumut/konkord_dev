@@ -1,0 +1,357 @@
+@import "../mixins/mixins"
+@import "../general/variables"
+
+.header
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 30px 0px 20px 0px
+    border-bottom: 1px solid $grey-blue
+    +tablet-down
+      padding: 25px 0px 10px
+      //15px 0px 10px
+      align-items: flex-start
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0px 23px
+    +tablet-down
+      padding: 28px 0px 25px
+      //20px 0px 25px
+      position: relative
+
+.show-menu
+  display: none
+  +tablet-down
+    display: inline-block
+    width: 45px
+    height: 45px
+    margin-top: 4px
+    border-radius: 2px
+    +bg-image(50px, 45px, $grey-brown, '../images/icons/ic-menu.svg', 70%)
+  &:hover
+    background-color: $grey-brown
+
+
+.contacts-info
+  display: flex
+  +tablet-down
+    flex-wrap: wrap
+  &-item
+    color: $grey-blue
+    font-family: $font-Raleway-Regular
+    font-size: 16px
+    line-height: 1.875
+    margin: 8px 38px 8px 0px
+    &:hover
+      color: $blue
+    &:last-child
+      margin-right: 0px
+    +tablet-down
+      margin-top: 0px
+      margin-bottom: 0px
+  .phone
+    &:hover
+      color: $blue
+    +tablet-down
+      order: 1
+  .mail
+    +tablet-down
+      order: 3
+  .select-wrap
+    +tablet-down
+      order: 2
+    .contacts-info-item
+      +phonemin-down
+        padding-left: 30px
+
+
+.phone
+  color: $grey-blue
+  font-family: $font-HelveticaNeueCyr-Medium
+  font-size: 17.2px
+  line-height: 1.74
+  &-icon
+    margin-right: 10px
+
+.mail
+  &-icon
+    margin-right: 10px
+
+.location
+  &-icon
+    margin-right: 10px
+
+.social
+  display: flex
+  list-style: none
+  +tablet-down
+    //display: none
+  li
+    margin-right: 13px
+    +phonemin-down
+      margin-right: 5px
+    &:last-child
+      margin-right: 0px
+  &-item
+    display: inline-block
+    width: 35px
+    height: 35px
+    border-radius: 6px
+    background:
+      color: $green
+      //image: url("../images/icons/ic-tg.svg")
+      size: 22px
+      repeat: no-repeat
+      position: center
+    &:hover
+      background-color: $blue
+    &.tg
+      background-image: url("../images/icons/ic-tg.svg")
+    &.vb
+      background-image: url("../images/icons/ic-vb.svg")
+    &.wa
+      background-image: url("../images/icons/ic-wa.svg")
+
+
+.logo
+  width: 265px
+  height: 62px
+  color: #444444
+  display: inline-flex
+  align-items: center
+  +phone-down
+    font-size: 1rem
+  +phonemin-down
+    font-size: 0.7rem
+  &:active, &:hover
+    color: #444444
+  img
+    width: 23%
+    height: auto
+    margin-right: 10px
+    +phonemin-down
+      margin-right: 3px
+  &-name
+    font-size: 1.7em
+    line-height: 1
+    font-family: $font-MagistralC-Bold
+  &-subname
+    font-size: 0.7em
+    line-height: 1
+    font-family: $font-MagistralC-Regular
+  &-text
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.navigation
+  display: inline-flex
+  justify-content: space-between
+  align-items: center
+  flex-grow: 1
+  margin-left: 125px
+  //140px
+
+  +tablet-down
+    display: none
+    position: absolute
+    flex-direction: column
+    width: calc(100% + 30px)
+    margin: 0px
+    left: -15px
+    top: 100%
+    background-color: $grey-brown
+    z-index: 100
+  &.active
+    display: inline-flex
+
+  li
+    display: inline-block
+    padding: 10px 0px 20px
+    //15px 0px 20px
+    &.active, &:hover, &:active
+      +tablet-down
+        background-color: $green
+        border-color: $green
+      .navigation-item
+        color: $green
+        text-decoration: none
+        +tablet-down
+          color: white
+
+    +tablet-down
+      width: 100%
+      padding: 25px 0px 12px
+      border: 0px solid #535353
+      border-bottom-width: 1px
+      text-align: center
+    &:first-child
+      +tablet-down
+        border-top-width: 1px
+
+  &-item
+    text-transform: uppercase
+    font-family: $font-Raleway-Regular
+    font-size: 15px
+    line-height: 1
+    color: $fontColorMain
+    +tablet-down
+      font-size: 16px
+      color: #FFFFFF
+      display: inline-block
+      width: 100%
+
+
+select
+  border-width: 0px
+  height: auto
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: url('../images/icons/ic-wa.svg') 96% / 15% no-repeat transparent
+  padding: 0px 35px 0px 25px
+  &::-ms-expand
+    display: none
+  background:
+    image: url("../images/icons/arrow-down.png")
+    repeat: no-repeat
+    size: 9px
+    position: 88% center
+
+
+@media screen and (min-width: 0\0 )
+  select
+    background: none\9
+    padding: 5px\9
+
+.head-banner
+  min-height: 502px
+  background:
+    color: #070505
+    image: url("../images/content/banner/banner1.jpg")
+    repeat: no-repeat
+    size: cover
+  //height: calc(100vh - 189px)
+  //padding: 70px 0px
+  color: #ffffff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  transition: all 3000ms, transform 3000ms
+  -webkit-transition: all 3000ms, transform 3000ms
+  -o-transition: all 3000ms, transform 3000ms
+  -moz-transition: all 3000ms, transform 3000ms
+  opacity: 0.25
+  +laptop-down
+    min-height: 430px
+  +tablet-down
+    min-height: 300px
+  +phone-down
+    min-height: 214px
+    //background-size: 100% 100%
+  background-size: cover
+  background-position: center
+  &.img-f
+    background-image: url("../images/content/banner/banner2.jpg")
+  &.img-s
+    background-image: url("../images/content/banner/banner3.jpg")
+  &.visible
+    opacity: 1
+  h1
+    font-size: 56px
+    font-family: $font-Raleway-Bold
+    line-height: 1.2
+    color: #FFFFFF
+    text-transform: uppercase
+    margin-bottom: 26px
+    margin-top: -30px
+    left: 30px
+
+    +ipad-down
+      font-size: 24px
+    +phone-down
+      margin-top: -15px
+      margin-bottom: 15px
+
+  .subtitle
+    font-size: 30px
+    line-height: 1.3
+    font-family: $font-Raleway-Regular
+    color: #FFFFFF
+    width: 70%
+    margin-bottom: 47px
+    top: -20px
+    +tablet-down
+      font-size: 13px
+      margin-bottom: 20px
+
+  .btn
+    width: 164px
+    font-size: 24px
+    top: 20px
+    +tablet-down
+      font-size: 10px
+      width: 70px
+      padding: 6px 9px
+
+  h1, .subtitle, .btn
+    transition: all 500ms, transform 500ms
+    -webkit-transition: all 500ms, transform 500ms
+    -o-transition: all 500ms, transform 500ms
+    -moz-transition: all 500ms, transform 500ms
+    opacity: 0
+    position: relative
+    &.active
+      opacity: 1
+
+.head-banner-inner
+  min-height: 195px
+  padding-top: 40px
+  transition: all 3000ms, transform 3000ms
+  -webkit-transition: all 3000ms, transform 3000ms
+  -o-transition: all 3000ms, transform 3000ms
+  -moz-transition: all 3000ms, transform 3000ms
+  background:
+    color: #070505
+    image: url("../images/content/banner/banner1.jpg")
+    repeat: no-repeat
+    //size: cover
+    position: center center
+  +phone-down
+    //background-position-x: right
+  .title
+    font-size: 36px
+    font-family: $font-Raleway-Regular
+    display: block
+    width: 100%
+    //height: 46px
+    text-align: center
+    color: #FFFFFF
+    text-transform: uppercase
+    transform: translate(0px, 20px)
+    +tablet-down
+      font-size: 30px
+    +phone-down
+      font-size: 20px
+  h1.fade-on-scroll-top.active
+    opacity: 1
+
+.horizontal
+  width: 200px
+  height: 200px
+  background: url('http://static1.360vrs.com/pano-content/judith-stone-at-sunset-east-farndon/640px-360-panorama.jpg')
+  -webkit-animation: backgroundScroll 20s linear infinite
+  animation: backgroundScroll 20s linear infinite
+  @-webkit-keyframes backgroundScroll
+    from
+      background-position: 0 0
+    to
+      background-position: -400px 0
+  @keyframes backgroundScroll
+    from
+      background-position: 0 0
+    to
+      background-position: -400px 0
